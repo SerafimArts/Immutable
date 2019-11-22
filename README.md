@@ -60,6 +60,14 @@ class Example
 
 That`s all!
 
+## Features
+
+- ☑ Full PHP 7.2, PHP 7.3, PHP 7.4 and PHP 8.0 (dev) compatibility ([proof](https://travis-ci.org/SerafimArts/Immutable))
+- ☑ [PSR-4](https://www.php-fig.org/psr/psr-4/)
+- ☑ [PSR-12](https://www.php-fig.org/psr/psr-12/)
+- ☑ Convenient helpers that don't break code =)
+- ☑ Feel the power of immutable objects!
+
 ## License
 
 See [LICENSE](https://github.com/SerafimArts/Immutable/master/LICENSE.md)
