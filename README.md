@@ -49,12 +49,18 @@ class Example
 {
     private int $value = 42;
 
-    public function update(int $newValue): self
+    // Sample #1 (PHP 7.4+)
+    public function with(int $newValue): self
     {
-        return immutable(function () {
-            $this->value = $newValue;
-        });
+        return immutable(fn () => $this->value = $newValue);
     }
+
+    // Sample #2 (PHP 7.3 and below)
+    public function with(int $newValue): self
+    {
+        return immutable(function (): void { $this->value = $newValue; });
+    }
+
 }
 ```
 
